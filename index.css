@@ -1,159 +1,130 @@
-:root{
-    --app-bg-color:rgb(206, 25, 25);
+:root {
+  --app-bg-color: rgb(206, 25, 25);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.app{
-    min-height: 100vh;
+.app {
+  min-height: 100vh;
 }
-.main-container{
-    /* background-color: yellow; */
+/* header */
+/* main */
+main {
+  /* background-color: aqua; */
+  margin-top: 50px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex;
+    flex-direction: column; */
 }
-section{
-    min-height: 80vh;
+/* section */
+section {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.section-container{
+.home-section {
+  row-gap: 5px;
+}
+.home-box {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box1-txt {
+  max-width: 500px;
+}
+/* home-box box2 */
+.box2 {
+  /* background: #000; */
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+.sec-box {
+  width: 100%;
+  /* background-color: yellow; */
+}
+.sec-box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.external-frame {
+  border: 2px solid rgb(0, 0, 0);
+  max-width: 250px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.internal-frame {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: linear-gradient(white, purple);
+}
+.my-img {
+  width: 100%;
+  border-radius: 50%;
+}
+.sec-box2 {
+  margin-top: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.sec-box1-content {
+  margin-top: 10px;
+  padding-left: 15px;
+  border-left: 10px solid purple;
+}
+.sec-box3 {
+  margin-top: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.sec-box3-content {
+  margin-top: 10px;
+  padding-right: 15px;
+  border-right: 10px solid purple;
 
+  display: flex;
+  flex-direction: column;
 }
-.home-container{
-    width: 100%;
-    margin-top: 60px;
-    height: 80vh;
+@media screen and (min-width: 900px) {
+  .box2 {
+    /* background: #000; */
+    display: flex;
+    flex-direction: row;
+  }
+  .sec-box {
+    /* background-color: rgb(255, 153, 0); */
 
     display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-.home-box{
-    /* background-color: blue; */
-    width: 100%;
-}
-.box2{
-    height: 80%;
-
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    /* justify-content: end; */
-    column-gap: 10px;
-
-}
-.sec-box{
-    /* border: 2px solid; */
-    /* background-color: aqua; */
-    flex-grow: 1;
-    display: flex;
-
-}
-.sec-box1{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-}
-.sec-box1-content{
-    width: 100%;
-    border-left: 5px solid purple;
-    padding-left: 5px;
-}
-.sec-box2{
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sec-box3{
-    width: 20%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-.sec-box3-content{
-    border-right: 5px solid purple;
-    padding-right: 5px;
-}
-
-.external-frame{
-    border: 2px solid;
-    width: 60%;
-    height: 300px;
-    border-radius: 100px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.internal-frame{
-    background: linear-gradient(white,purple);
-    width: 80%;
-    height: 90%;
-    border-radius: 100px;  
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-.my-img{
-    /* border: 2px solid red; */
-    width: 90%;
-    height: 90%;
-    border-radius: 110px;
-}
-
-
-/* next section skills */
-.skills-section{
-    margin-top: 100px;
-    padding-top: 70px;
-}
-
-@media screen and (max-width:800px) {
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-    .box2{
-        /* height: 80%; */
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: end; */
-        row-gap: 10px;
-        background-color: aqua;
+  }
+  .sec-box2 {
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .sec-box1 {
+    order: 2;
+    /* background: #000; */
     
-    }
-    .sec-box1{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 15px;
-        order: 2;
-    }
-    .sec-box2{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        order: 1;
-    }
-    .sec-box3{
-        width: 100%;
-    
-        display: flex;
-        flex-direction: column;
-        order: 3;
-    }
-    .skills-section{
-        margin-top: 60vh;
-        padding-top: 70px;
-    }
-    
+  }
+  .sec-box3 {
+    order: 3;
+    margin-top: 10px;
+    padding: 15px;
+  }
 }
