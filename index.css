@@ -55,6 +55,7 @@ section{
     row-gap: 15px;
 }
 .sec-box1-content{
+    width: 100%;
     border-left: 5px solid purple;
     padding-left: 5px;
 }
@@ -75,11 +76,7 @@ section{
     border-right: 5px solid purple;
     padding-right: 5px;
 }
-.sec-box2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .external-frame{
     border: 2px solid;
     width: 60%;
@@ -115,4 +112,48 @@ section{
 .skills-section{
     margin-top: 100px;
     padding-top: 70px;
+}
+
+@media screen and (max-width:800px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .box2{
+        /* height: 80%; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: end; */
+        row-gap: 10px;
+        background-color: aqua;
+    
+    }
+    .sec-box1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        order: 2;
+    }
+    .sec-box2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+    .sec-box3{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+    .skills-section{
+        margin-top: 60vh;
+        padding-top: 70px;
+    }
+    
 }
