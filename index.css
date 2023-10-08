@@ -1,5 +1,5 @@
 :root {
-  --app-bg-color: rgb(206, 25, 25);
+  --app-bg-color: rgb(219, 218, 218);
 }
 * {
   margin: 0;
@@ -8,6 +8,7 @@
 }
 .app {
   min-height: 100vh;
+  background-color: var(--app-bg-color);
 }
 /* header */
 /* main */
@@ -28,6 +29,7 @@ section {
   flex-direction: column;
 }
 .home-section {
+    background: #fff;
   row-gap: 5px;
 }
 .home-box {
@@ -59,8 +61,8 @@ section {
 }
 .external-frame {
   border: 2px solid rgb(0, 0, 0);
-  max-width: 200px;
-  height: 300px;
+  max-width: 150px;
+  height: 250px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -75,6 +77,7 @@ section {
 }
 .my-img {
   width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 .sec-box2 {
@@ -130,7 +133,6 @@ section {
 }
 /* skill */
 .skills-section{
-    background-color: blue;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -142,14 +144,16 @@ section {
     align-items: center;
 }
 .skills-section-box1{
-    background-color: aqua;
+    /* background-color: aqua; */
+    padding: 70px;
+
 }
 .skills-section-box2{
-    background-color: aqua;
+    padding: 70px;
+    /* background-color: aqua; */
 }
 @media screen and (min-width:900px) {
     .skills-section{
-        background-color: blue;
         display: flex;
         flex-direction: column;
         row-gap: 10px;
@@ -166,14 +170,90 @@ section {
     }
     .skills-section-box1{
         width: 50%;
-        background-color: aqua;
     }
     .skills-section-box2{
-        background-color: aqua;
         width: 50%;
     }
 }
 
 .qualification-section{
     padding-top: 80px;
+    background-color: #fff;
+}
+.qualification-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qualification-flex{
+    display: flex;
+    flex-direction: column;
+}
+.qualification-box1{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.work{
+    display: flex;
+    justify-content: center;
+}
+.study{
+    border-left: 10px solid purple;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (min-width:900px) {
+    .qualification-flex{
+        display: flex;
+        flex-direction: row;
+    }
+    .qualification-box1{
+        width: 50%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .qualification-box2{
+        width: 50%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.services-section{
+    padding-top: 60px;
+}
+.services-header{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* no at media screen */
+
+.Projects-section{
+    padding-top: 50px;
+    background-color: #fff
+}
+.projects-header{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* to be contd */
+
+.contact-section{
+    padding-top: 10px;
+}
+.contacts-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    min-height: 10vh;
+    background-color: #f5f5f5;
 }
