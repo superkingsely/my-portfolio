@@ -231,6 +231,11 @@ section {
     flex-direction: column;
     align-items: center;
 }
+.service-box{
+    border-left: 10px solid purple;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
 /* no at media screen */
 
 .Projects-section{
@@ -238,6 +243,7 @@ section {
     background-color: #fff
 }
 .projects-header{
+    border-left: 10px solid purple;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -252,6 +258,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.my-con{
+    border-left: 10px solid purple;
+    padding-left: 15px;
 }
 footer{
     min-height: 10vh;
